@@ -1,0 +1,130 @@
+* { box-sizing: border-box }
+
+@font-face {
+	font-family: 'Sequel Sans Bold Head';
+	font-weight: 700;
+	src: url('media/sequel-sans-bold-head.ttf') format('truetype');
+}
+
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: radial-gradient(farthest-side, #101215, #050607);
+	color: #fff;
+	font-family: 'Inter', sans-serif;
+}
+
+#content {
+	display: table;
+	width: 100%;
+	height: 100%;
+	border-collapse: collapse;
+}
+#content > div {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+header {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+
+#logo {
+	font-family: 'Sequel Sans Bold Head';
+	font-weight: 700;
+	font-size: 4em;
+
+	display: inline-flex;
+	flex-direction: column;
+}
+#logo > div:first-child > span {
+	color: #AD1010;
+}
+#logo > div:last-child {
+	text-align: center;
+	font-size: 40%;
+}
+
+#cute {
+	position: fixed;
+	bottom: max(-2vw, -2vh);
+	left: max(-5vw, -5vh);
+	transform: rotate(-15deg);
+	height: 120vh;
+	opacity: .1;
+	pointer-events: none;
+	z-index: -999;
+}
+
+#samples {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4rem;
+
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+
+	text-align: left;
+	padding: 4rem;
+	padding-top: 2rem;
+}
+#samples > section > *:first-child {
+	margin-top: 0;
+}
+
+#header .purchase {
+	margin-top: 2rem;
+}
+
+.purchase {
+	text-decoration: none !important;
+	color: inherit;
+}
+.purchase > div {
+	background-color: #007be6;
+	display: inline-flex;
+	border-radius: .35rem;
+	overflow: hidden;
+	cursor: pointer;
+	max-width: 100%;
+}
+.purchase > div > .icon {
+	width: 2.5rem;
+	padding: .5rem;
+	padding-left: .6rem;
+	padding-right: .6rem;
+	border-top-left-radius: .35rem;
+	border-bottom-left-radius: .35rem;
+	background-color: rgb(0 0 0 / 36%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.purchase > div > .icon > img {
+	width: 100%;
+}
+.purchase > div > div:not(.icon) {
+	padding: .6rem;
+	padding-top: .2rem;
+	padding-bottom: 0;
+	font-size: .65em;
+	text-align: center;
+	width: 10rem;
+	border-left: 1px solid #004786;
+}
+.purchase > div > div:not(.icon) > img {
+	height: 1.2rem;
+}
+@media (max-width: 300px) {
+	.purchase > div > .icon {
+		display: none;
+	}
+}
