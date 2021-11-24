@@ -59,7 +59,6 @@ header {
 	height: 120vh;
 	opacity: .1;
 	pointer-events: none;
-	z-index: -999;
 }
 
 #samples {
