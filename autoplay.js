@@ -1,9 +1,8 @@
 const autoplay = document.location.hash.trim().replace(/^#/, '').trim().toLowerCase();
 if (autoplay) {
-	document.querySelectorAll('#content > section').forEach(section => {
-		if (section.querySelector('h1').textContent.trim().toLowerCase() === autoplay) {
-			console.log('playing', section.querySelector('audio:nth-of-type(2)'));
-			section.querySelector('audio:nth-of-type(2)').play();
+	document.querySelectorAll('.sample').forEach(sample => {
+		if (sample.textContent.trim().toLowerCase() === autoplay) {
+			sample.parentElement.querySelector('audio.fx').play();
 			return false;
 		}
 	});
