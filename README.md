@@ -1,4 +1,4 @@
-<h1><p align="center"><a href="wiki">VoiceBox Wiki</a></p></h1>
+<h1><p align="center"><a href="https://github.com/WilliamVenner/voicebox-fx-samples/wiki">VoiceBox Wiki</a></p></h1>
 
 <p align="center"><img src="https://i.imgur.com/ogqgNlc.png"/></p>
 
