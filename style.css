@@ -127,3 +127,13 @@ header {
 		display: none;
 	}
 }
+
+#try-in-game {
+	text-decoration: none;
+	color: #007be6;
+}
+@media (max-width: 600px) {
+	#try-in-game {
+		display: none;
+	}
+}
