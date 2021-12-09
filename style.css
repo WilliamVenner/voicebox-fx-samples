@@ -74,6 +74,8 @@ header {
 	text-align: left;
 	padding: 4rem;
 	padding-top: 2rem;
+	max-width: 75%;
+	margin: auto;
 }
 #samples > section > *:first-child {
 	margin-top: 0;
