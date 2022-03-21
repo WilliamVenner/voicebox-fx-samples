@@ -1,17 +1,16 @@
 const autoplay = document.location.hash.trim().replace(/^#/, '').trim().toLowerCase();
 if (autoplay) {
-	document.querySelectorAll('.sample').forEach(sample => {
-		if (sample.textContent.trim().toLowerCase() === autoplay) {
+	for (const sample of [...document.querySelectorAll('.sample')]) {
+		if (sample.textContent.trim().toLowerCase().endsWith(' ' + autoplay)) {
 			sample.parentElement.querySelector('audio.fx').play();
-			return false;
+			break;
 		}
-	});
+	}
 }
 
 const audio = document.querySelectorAll('#content audio');
 audio.forEach(evt => {
 	evt.addEventListener('play', function() {
-		console.log(audio);
 		audio.forEach(audio => {
 			if (audio !== this) {
 				audio.pause();
